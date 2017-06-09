@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/loading_error_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#282F37"
+                android:visibility="gone"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loading_img"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:background="@mipmap/icon_chuowo"
+        android:paddingBottom="10dp"
+        android:text="戳我试试"
+        android:textColor="@color/progresscolor"
+        android:textSize="14dp"
+        />
+
+    <ImageView
+        android:id="@+id/loading_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/icon_font_jiazai"
+        android:contentDescription="@string/ImageDes"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loading_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="教案未加载成功"
+        />
+
+</RelativeLayout>

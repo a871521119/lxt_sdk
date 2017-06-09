@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="all">
+    <string name="app_name">weisdk</string>
+    <string name="net_error">网络访问错误，请稍后再试</string>
+    <string name="empty">还没有数据哦</string>
+    <string name="loading">请稍后...</string>
+    <string name="reload">重新尝试</string>
+    <string name="no_net">网络不可用,请检查你的网络</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_setting">去设置</string>
+    <string name="permission_title_permission_failed">权限申请失败</string>
+    <string name="permission_message_permission_failed">我们需要的一些权限被您拒绝或者系统发生错误申请失败，请您到设置页面手动授权，否则功能无法正常使用！</string>
+
+    <string name="permission_resume">继续</string>
+    <string name="permission_title_permission_rationale">权限已被拒绝</string>
+    <string name="permission_message_permission_rationale">您已经拒绝过我们申请授权，请您同意授权，否则功能无法正常使用！</string>
+    <string name="title_dialog">友情提示</string>
+    <string name="message_permission_failed">你拒绝了我们的权限申请，真是不能愉快的玩耍了！</string>
+    <string name="message_permission_rationale">您已拒绝过定位权限，没有权限我们无法提供相关内容，赶快把权限给我吧！</string>
+
+    <string name="btn_dialog_yes_permission">好，给你</string>
+    <string name="btn_dialog_no_permission">我拒绝</string>
+    <!--视频类-->
+    <string name="video_teatureCloseCamara">教师关闭了摄像头</string>
+    <!--公共的部分-->
+    <string name="dataFaildText">加载数据失败,请稍后再试</string>
+
+
+</resources>

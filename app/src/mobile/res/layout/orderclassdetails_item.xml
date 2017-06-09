@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="@dimen/x140"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:orientation="vertical"
+        >
+        <!--android:layout_marginTop="4px" swb2017.1.23-->
+        <ImageView
+            android:id="@+id/imv_first_vertical_string"
+            android:layout_width="@dimen/x6"
+            android:layout_height="@dimen/x30"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <ImageView
+            android:id="@+id/course_head_image"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x120"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/x10"
+            android:src="@mipmap/icon_jiesuo"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/done_character"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/x20"
+        android:contentDescription="@string/ImageDes"
+        android:padding="@dimen/x10"
+        android:src="@mipmap/icon_wancheng"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x120"
+        android:layout_alignBottom="@id/ll_first"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_toLeftOf="@id/done_character"
+        android:layout_toRightOf="@id/ll_first"
+        >
+
+        <TextView
+            android:id="@+id/character_english_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="dasdasdasdasdasd"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="#2f2f2f"
+            android:textSize="10sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_below="@id/character_english_name"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

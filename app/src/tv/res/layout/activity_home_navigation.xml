@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/y10"
+    android:orientation="horizontal"
+    >
+    <com.lxt.tv.widget.NavigationBar
+        style="@style/NavigationBar"
+        android:drawableLeft="@drawable/activity_main_tab_zhuye"
+        android:text="@string/home_Tab_bookingClass"
+        />
+    <com.lxt.tv.widget.NavigationBar
+        style="@style/NavigationBar"
+        android:drawableLeft="@drawable/activity_main_tab_wode"
+        android:text="@string/home_Tab_myClass"
+        />
+    <com.lxt.tv.widget.NavigationBar
+        style="@style/NavigationBar"
+        android:drawableLeft="@drawable/activity_main_tab_jilu"
+        android:text="@string/home_Tab_classRecord"
+        />
+    <com.lxt.tv.widget.NavigationBar
+        style="@style/NavigationBar"
+        android:drawableLeft="@drawable/activity_main_tab_gerenzhongxin"
+        android:text="@string/home_Tab_personalCenter"
+        />
+
+</RadioGroup>

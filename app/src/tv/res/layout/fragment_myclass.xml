@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iofcourse_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    >
+
+    <FrameLayout
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_centerHorizontal="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        >
+        <com.lxt.tv.widget.CustomViewPager
+            android:focusable="true"
+            android:id="@+id/iofcourse_viewpager_id"
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y440"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+        <View
+            android:id="@+id/border"
+            android:visibility="gone"
+            android:background="@drawable/bg_booking_selected"
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y440"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:focusable="false"
+        android:id="@+id/countdown_text"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.lxt.tv.widget.ButtonTopLine
+        android:id="@+id/enter_classroom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/countdown_text"
+        android:gravity="center"
+        android:background="@drawable/icon_short_redbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/myClass_classEnterClassRoom"
+        android:focusable="false"
+        android:textColor="#fff"
+        />
+
+
+</RelativeLayout>

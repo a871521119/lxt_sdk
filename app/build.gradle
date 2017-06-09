@@ -1,0 +1,269 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    // 签名文件
+    signingConfigs {
+        lxt {
+            keyAlias 'weiyuyan'
+            keyPassword 'abc1234'
+            storeFile file('../wyy_swb.jks')
+            storePassword 'abc1234'
+        }
+    }
+
+
+    defaultConfig {
+        applicationId "com.lxt"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.lxt
+        }
+    }
+
+    /*渠道对应的资源文件*/
+    sourceSets {
+        lxt {
+            manifest.srcFile 'src/mobile/AndroidManifest.xml'
+            java.srcDirs = ['src/mobile/java', 'src/mobile/java/']
+            resources.srcDirs = ['src/mobile']
+            renderscript.srcDirs = ['src/mobile']
+            res.srcDirs = ['src/mobile/res']
+            assets.srcDirs = ['src/mobile']
+            jniLibs.srcDirs = ['src/mobile']
+        }
+
+//        weiyuyanstudent0 {
+//            manifest.srcFile 'src/mobile/AndroidManifest.xml'
+//            java.srcDirs = ['src/mobile/java', 'src/mobile/java/']
+//            resources.srcDirs = ['src/mobile']
+//            renderscript.srcDirs = ['src/mobile']
+//            res.srcDirs = ['src/mobile/res']
+//            assets.srcDirs = ['src/mobile']
+//            jniLibs.srcDirs = ['src/mobile']
+//        }
+        weiyuyanstudent0 {
+            manifest.srcFile 'src/tv/AndroidManifest.xml'
+            java.srcDirs = ['src/tv/java', 'src/tv/java/']
+            resources.srcDirs = ['src/tv']
+            renderscript.srcDirs = ['src/tv']
+            res.srcDirs = ['src/tv/res']
+            assets.srcDirs = ['src/tv']
+            jniLibs.srcDirs = ['src/tv']
+        }
+    }
+
+
+    productFlavors {
+
+//        weiyuyanstudent0 {
+//            applicationId "weiyuyan.com.weiyuyanstudent"
+//            versionCode  2
+//            versionName "1.47"
+//            manifestPlaceholders = [label: "哎爱上微口语", icon: "@drawable/ic_launcher", group_guid: "8c47e566352b11e78b1000163e106fb7"]
+//        }41a099dea1c611e6a0dc00163e032fb9
+
+        lxt {
+            manifestPlaceholders = [label: "哎爱上微口语", icon: "@drawable/ic_launcher", group_guid: "8c47e566352b11e78b1000163e106fb7"]
+        }
+//        lxt {
+//            versionName "1.47"
+//            manifestPlaceholders = [label: "微口语", icon: "@drawable/ic_launcher", group_guid: "d73706b612ca11e7833500163e106fb7"]
+//        }
+        weiyuyanstudent0 {
+            manifestPlaceholders = [label: "哎爱上微口语", icon: "@drawable/ic_launcher", group_guid: "555fb2a44a7f11e7aaab00163e106fb7"]
+        }
+//        /**
+//         * 小主人
+//         */
+//        weiyuyanstudent_xiaozhuren {
+//            manifestPlaceholders = [label: "ai-talk爱口语", icon: "@mipmap/icon_xiaozhuren", group_guid: "41917af8a1c611e6a12800163e032fb9"]
+//        }
+//        /**
+//         * 欢乐堡
+//         */
+//        weiyuyanstudent_huanlebao {
+//            manifestPlaceholders = [label: "Cheer'talk", icon: "@mipmap/icon_huanlebao", group_guid: "46e45f9ad61711e69e5e00163e2eb842"]
+//        }
+//        /**
+//         * 乐学习
+//         */
+//        weiyuyanstudent_lexuexi {
+//            manifestPlaceholders = [label: "乐学习在线", icon: "@mipmap/icon_lexuexi", group_guid: "1d7a9558c1a811e69c6300163e2e7f72"]
+//        }
+//        /**
+//         * 重庆乔尼盒子
+//         */
+//        weiyuyanstudent_nihezi {
+//            manifestPlaceholders = [label: "Wofoabc", icon: "@mipmap/icon_chongqing", group_guid: "f8deea94c59b11e6950000163e2e7f72"]
+//        }
+//        /**
+//         * 深圳市传扬信息咨询有限公司
+//         */
+//
+//        weiyuyanstudent_chuanyang {
+//            manifestPlaceholders = [label: "有你英语", icon: "@mipmap/icon_youni", group_guid: "483a44d8086511e7a98f00163e2eb842"]
+//        }
+//        /**
+//         * 日新教育
+//         */
+//
+//        weiyuyanstudent_rixin {
+//            manifestPlaceholders = [label: "外教英语", icon: "@mipmap/icon_rixinjiaoyu", group_guid: "eba19a48a57f11e6a57300163e033e10"]
+//        }
+//
+//        /**
+//         * 爱优教育
+//         */
+//
+//        weiyuyanstudent_aiyou {
+//            manifestPlaceholders = [label: "爱优教育", icon: "@mipmap/icon_aiyoujiaoyu", group_guid: "41a11bf2a1c611e6807a00163e032fb9"]
+//        }
+//        /**
+//         * 北外在线
+//         */
+//        weiyuyanstudent_beiwai {
+//            manifestPlaceholders = [label: "北外网课", icon: "@mipmap/icon_beiwaiwangke", group_guid: "8f222a00a62c11e690a800163e033e10"]
+//        }
+//        /**
+//         * 山月教育
+//         */
+//        weiyuyanstudent_shanyue {
+//            manifestPlaceholders = [label: "山月摩恩国际", icon: "@mipmap/icon_shanyue", group_guid: "419df88ca1c611e696e200163e032fb9"]
+//        }
+//        /**
+//         * 衡阳雅思
+//         */
+//
+//        weiyuyanstudent_yasi {
+//            manifestPlaceholders = [label: "环球外教口语", icon: "@mipmap/icon_hengyangyasi", group_guid: "418f45a8a1c611e6bfb400163e032fb9"]
+//        }
+//        /**
+//         * 清华教育
+//         */
+//        weiyuyanstudent_qinghua {
+//            manifestPlaceholders = [label: "清华英语", icon: "@mipmap/icon_qinghuajiaoyu", group_guid: "419ad440a1c611e6a25700163e032fb9"]
+//        }
+//        /**
+//         * 洛阳瑞飞翔
+//         */
+//
+//        weiyuyanstudent_ruifeixiang {
+//            manifestPlaceholders = [label: "欧美音英语", icon: "@mipmap/icon_oumeiyinyue", group_guid: "419a29f0a1c611e68ef000163e032fb9"]
+//        }
+//        /**
+//         * 南通市普乐士培训有限公司
+//         */
+//        weiyuyanstudent_pule {
+//            manifestPlaceholders = [label: "脱口家", icon: "@mipmap/icon_tuokoujia", group_guid: "b127baecc1a811e68a6100163e2e7f72"]
+//        }
+//        /**
+//         * 兰州陈老师
+//         */
+//        weiyuyanstudent_chenlaoshi {
+//            manifestPlaceholders = [label: "爱Talk", icon: "@mipmap/icon_chenlaoshi", group_guid: "063adfdec01211e6aa8300163e2e7f72"]
+//        }
+//        /**
+//         * 海航教育
+//         */
+//
+//        weiyuyanstudent_haihang {
+//            manifestPlaceholders = [label: "海航教育", icon: "@mipmap/icon_hanghaijiaoyu", group_guid: "1bdd4f12aa4511e691e400163e2e7f72"]
+//        }
+//        /**
+//         * 重庆沛杰教育咨询有限公司
+//         */
+//        weiyuyanstudent_peijie {
+//            manifestPlaceholders = [label: "Hey Talk", icon: "@mipmap/icon_talk", group_guid: "52df5774fe4811e6a1dc00163e2eb842"]
+//        }
+//        /**
+//         * 内蒙古包头昆区博世通英语
+//         */
+//
+//        weiyuyanstudent_boshitong {
+//            manifestPlaceholders = [label: "博世通微Talk", icon: "@mipmap/icon_boshitong", group_guid: "ffca031a024111e78ee200163e2eb842"]
+//        }
+//        /**
+//         * 内蒙古诺娃
+//         */
+//        weiyuyanstudent_nuowa {
+//            manifestPlaceholders = [label: "外教说", icon: "@mipmap/icon_waijiaoshuo", group_guid: "51e8a6feb54611e69f8400163e2e7f72"]
+//        }
+//        /**
+//         * 天津陈俊伊
+//         */
+//
+//        weiyuyanstudent_chenjunyi {
+//            manifestPlaceholders = [label: "同梦教育", icon: "@mipmap/icon_tongmeng", group_guid: "f7bf5106d95711e6b95400163e2eb842"]
+//        }
+//        /**
+//         * 衡水剑桥
+//         */
+//        weiyuyanstudent_jiaoqiao {
+//            manifestPlaceholders = [label: "衡水剑桥", icon: "@mipmap/icon_hengshuijiaoqiao", group_guid: "4198ac38a1c611e6a6c200163e032fb9"]
+//        }
+//        /**
+//         * 广西南宁阳关大道教
+//         */
+//
+//        weiyuyanstudent_dadaojiao {
+//            manifestPlaceholders = [label: "外教陪练", icon: "@mipmap/icon_waijiaopeilian", group_guid: "0d14afa2a59a11e6849900163e033e10"]
+//        }
+//        /**
+//         * 美誉
+//         */
+//
+//        weiyuyanstudent_meiyu {
+//            manifestPlaceholders = [label: "美誉微语", icon: "@mipmap/icon_meiyu", group_guid: "54ea1272b79211e686df00163e2e7f72"]
+//        }
+//
+//        /**
+//         * 衡阳一家人
+//         */
+//
+//        weiyuyanstudent_yijiaren {
+//            manifestPlaceholders = [label: "一家人", icon: "@mipmap/icon_yijiaren", group_guid: "18977d7ea1de11e6b3a800163e033e10"]
+//        }
+//        /**
+//         * 小牛顿
+//         */
+//        weiyuyanstudent_niudun {
+//            manifestPlaceholders = [label: "小牛顿口语", icon: "@mipmap/icon_xiaoniudun", group_guid: "4190f68ca1c611e69f8100163e032fb9"]
+//        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //无需引入tinker的任何库,使用tinkerpatch sdk即可
+    compile("com.tinkerpatch.sdk:tinkerpatch-android-sdk:${TINKERPATCH_VERSION}") {
+        changing = true
+    }
+    compile project(':lxt_sdk')
+    compile project(':oss-android-sdk')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.baijia.live:liveplayer-sdk-core:0.3.8'
+    compile 'com.baijia.live:liveplayer-sdk-core-ppt:0.3.5'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.6'
+    testCompile 'junit:junit:4.12'
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    compile 'com.android.support:design:26.0.0-alpha1'
+}
+
+apply from: 'tinkerpatch.gradle'

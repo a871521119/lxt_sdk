@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Rl_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <!--  上面的title-->
+    <include layout="@layout/base_title_layout"
+         android:id="@+id/orderteacher_title"/>
+
+
+        <!--选择日期的条 + 筛选-->
+        <LinearLayout
+            android:id="@+id/order_teacher_title"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:baselineAligned="false">
+
+            <!--选择日期的条-->
+            <TextView
+                android:textSize="10sp"
+                android:id="@+id/order_teacher_time"
+                android:text="上课时间：04月10日（星期日）11：00"
+                android:gravity="center"
+                android:clickable="true"
+                android:textColor="@android:color/black"
+                android:background="@drawable/shape"
+                android:drawableRight="@mipmap/blue_arrow_down"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_height="@dimen/y60" />
+
+            <!--筛选-->
+            <Button
+                android:id="@+id/bt_select"
+                android:text="筛选"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/shape"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/y60" />
+
+        </LinearLayout>
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/ordered_teacher_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/ordered_teacher_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#e7e1e1"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:smoothScrollbar="true"
+                />
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+    <include layout="@layout/no_data_error_toast_layout"
+        android:visibility="gone"/>
+</LinearLayout>

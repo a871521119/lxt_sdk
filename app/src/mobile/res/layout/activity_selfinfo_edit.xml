@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/base_title_layout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/self_other_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:visibility="gone"
+        >
+
+
+        <TextView
+            android:id="@+id/selfInfo_tv"
+            style="@style/default_textStyle_colorblack"
+            android:layout_centerVertical="true"
+            android:text="@string/selfInfo_englist_name"
+            />
+
+        <EditText
+            android:id="@+id/selfInfo_update_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/selfInfo_tv"
+            android:layout_toRightOf="@+id/selfInfo_tv"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="center_vertical|right"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x10"
+            android:textCursorDrawable="@null"
+            android:textStyle="italic"
+            />
+
+        <View
+            android:id="@+id/self_birthdayClick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/self_sex_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:id="@+id/self_select_boy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x70"
+            >
+
+            <TextView
+                style="@style/default_textStyle_colorblack"
+                android:layout_centerVertical="true"
+                android:text="男:"
+                />
+
+            <ImageView
+                android:id="@+id/self_boy_check_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_check"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/gray"
+            />
+
+        <RelativeLayout
+            android:id="@+id/self_select_girl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x70"
+            >
+
+            <TextView
+                style="@style/default_textStyle_colorblack"
+                android:layout_centerVertical="true"
+                android:text="女:"
+                />
+
+            <ImageView
+                android:id="@+id/self_girl_check_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_check"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/gray"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

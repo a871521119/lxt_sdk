@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lxt.mobile.widget.PullDoorView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!--时间-->
+        <TextView
+            android:id="@+id/order_validityTime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:gravity="center"
+            android:text="有效期2017-6-27"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <!--背景图，需要加载-->
+            <ImageView
+                android:id="@+id/image_course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/viewpagerc"
+                />
+
+            <View
+                android:id="@+id/v"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                />
+            <!--半圆的背景-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/v"
+                android:scaleType="fitXY"
+                android:src="@mipmap/order_white"
+                />
+            <!--预约按钮-->
+            <TextView
+                android:id="@+id/order_yuyuebtn"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/x120"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/btn_order"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="预约"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/x28"
+                />
+            <!--第二部分-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x300"
+                android:layout_alignParentBottom="true"
+                >
+                <!--课程名称-->
+                <TextView
+                    android:id="@+id/course_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="1"
+                    android:text="这是课堂名称"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x38"
+                    />
+                <!--课程英文名称-->
+                <TextView
+                    android:id="@+id/course_package_name"
+                    style="@style/default_textStyle_colorgray"
+                    android:layout_below="@id/course_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="1"
+                    android:text="my name is yangfu "
+                    android:textSize="13sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x120"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <!--几星-->
+                        <TextView
+                            android:id="@+id/order_sum_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@mipmap/icon_star_nub"
+                            android:drawablePadding="@dimen/x15"
+                            android:gravity="center"
+                            android:text="240"
+
+                            android:textColor="@color/details_color"
+                            android:textSize="18sp"
+                            />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/x25"
+                        android:layout_marginTop="@dimen/x25"
+                        android:background="@color/white_alpha_half"
+                        />
+                    <!-- 12/50表示一共以后多少集课程 这个是第多少集-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <!--几星-->
+                        <TextView
+                            android:id="@+id/order_count_sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@mipmap/icon_course_jindu"
+                            android:drawablePadding="@dimen/x15"
+                            android:gravity="center"
+                            android:text="240"
+                            android:textColor="@color/details_color"
+                            android:textSize="18sp"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/order_state_img"
+                android:layout_width="@dimen/x160"
+                android:layout_height="@dimen/x160"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/x50"
+                android:layout_marginRight="@dimen/x50"
+                />
+
+        </RelativeLayout>
+
+        <!--向上的按钮-->
+        <ImageView
+            android:id="@+id/order_up_tomore"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_up"
+            />
+    </LinearLayout>
+</com.lxt.mobile.widget.PullDoorView>

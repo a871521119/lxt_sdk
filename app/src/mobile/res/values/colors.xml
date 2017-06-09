@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="erro_textColor">#5f5f5f</color>
+    <color name="erro_textColor2">#C2C2C2</color>
+    <color name="colorPrimary">@color/title_background_color</color>
+    <color name="colorPrimaryDark">@color/title_background_color</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="false_btn_color">#9EC840</color>
+    <color name="white_gray">#F7F7F7</color>
+    <color name="white_f7f7f7">#f7f7f7</color>
+    <color name="dim_red">#990000</color>
+    <color name="title_background_color">#77b82a</color>
+    <color name="personal_center_layout_color">#e0000000</color>
+    <color name="head_bg">#fafafa</color>
+    <color name="details_color">#ffb931</color>
+    <color name="black">#ff000000</color>
+    <color name="f0f0f0">#f0f0f0</color>
+    <color name="next_button_color">#7DBB35</color>
+    <color name="lxt_dialog_stroke">#9867C8</color>
+    <!-- 关注教师 -->
+    <color name="listview_layout">#fff4f7f9</color>
+    <color name="divider">#dddbdb</color>
+    <color name="attention_text_color">#F2c119</color>
+    <color name="notice_in_class_the_divider_color">#dcd4d4</color>
+    <color name="course_name_english_color">#78797b</color>
+    <color name="progresscolor">#D6D51E</color>
+    <color name="sliding_gray">#f7f7f7</color>
+    <color name="color7f7f7f">#7F7F7F</color>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lxt.mobile.activity.HomePageActivity"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/base_title_layout"
+        />
+
+    <com.lxt.mobile.widget.NoScrollViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></com.lxt.mobile.widget.NoScrollViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        />
+
+    <RadioGroup
+        android:id="@+id/home_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+        <RadioButton
+            android:id="@+id/home_rd1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/home_radiobutton_yuyueshangke_select"
+            android:textSize="0sp"
+            />
+
+        <RadioButton
+            android:id="@+id/home_rd2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/home_radiobutton_wodekecheng_select"
+            android:textSize="0sp"
+            />
+
+    </RadioGroup>
+
+
+</LinearLayout>

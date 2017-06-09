@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_exit_bg"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="预约"
+            android:textColor="#908989"
+            android:layout_marginTop="@dimen/y20"
+            android:gravity="center"
+            android:padding="@dimen/x10"
+            android:textSize="25sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y15"
+            >
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:textColor="#908989"
+                android:padding="@dimen/x10"
+                android:textSize="@dimen/x20"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x20"
+                />
+
+            <TextView
+                android:id="@+id/order_time"
+                android:layout_toRightOf="@id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hongtiao"
+                android:text="12月3号(周四)  18:30"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:padding="@dimen/x10"
+                android:textSize="@dimen/x20"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            >
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程"
+                android:textColor="#908989"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:padding="@dimen/x10"
+                android:textSize="@dimen/x20"/>
+            <TextView
+                android:id="@+id/order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="青少年新概念英语"
+                android:layout_marginRight="@dimen/x20"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#fff"
+                android:layout_toRightOf="@id/subject"
+                android:background="@drawable/hongtiao"
+                android:gravity="center"
+                android:padding="@dimen/x10"
+                android:textSize="@dimen/x20"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程"
+                android:textColor="#918A8A"
+                android:gravity="center"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2小时之内"
+                android:textColor="#EA687B"
+                android:gravity="center"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不能取消预约噢!"
+                android:textColor="#918A8A"
+                android:gravity="center"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/y40"
+            >
+            <Button
+                android:id="@+id/order_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/btn_color"
+                android:background="@drawable/course_record_last_btn_bg"
+                android:paddingTop="@dimen/x10"
+                android:paddingBottom="@dimen/x10"
+                android:paddingLeft="@dimen/x50"
+                android:paddingRight="@dimen/x50"
+                android:layout_marginLeft="@dimen/x40"
+                android:textSize="15sp"
+                android:text="取消"/>
+
+            <Button
+                android:id="@+id/order_confirm"
+                android:layout_width="wrap_content"
+                android:textColor="@color/btn_color"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x40"
+                android:focusable="true"
+                android:background="@drawable/course_record_last_btn_bg"
+                android:paddingTop="@dimen/x10"
+                android:paddingBottom="@dimen/x10"
+                android:paddingLeft="@dimen/x50"
+                android:paddingRight="@dimen/x50"
+                android:textSize="15sp"
+                android:text="确定"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

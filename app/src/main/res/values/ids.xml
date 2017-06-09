@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="activity_join_code_ppt" type="id"/>
+    <item name="picture_in_picture_a_small_window_teacher" type="id"/>
+    <item name="picture_in_picture_a_small_window_user" type="id"/>
+</resources>

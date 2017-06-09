@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 校区选择item 登录之后弹出 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/campus_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="默认机构"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/campus_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="#090"/>
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/lesson_name_text"
+            android:layout_below="@+id/campus_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myClass_classNoClass"
+            android:textSize="12sp"
+            android:textColor="#999"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lessons_progress_text"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="0/0"
+        android:textSize="16sp"
+        android:textColor="#000"/>
+
+</RelativeLayout>

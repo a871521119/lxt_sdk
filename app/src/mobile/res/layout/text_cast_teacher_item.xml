@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="right"
+    android:clickable="false"
+    android:paddingTop="3dp"
+    android:paddingBottom="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/text_cast_teacher_head_portrait"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/defalt_circle_img"/>
+
+    <LinearLayout
+        android:layout_marginRight="40dp"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_cast_teacher_current_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23:30"/>
+
+        <TextView
+            android:id="@+id/text_cast_teacher_text_content"
+            android:textColor="#51A6D2"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阿萨德发送的发送的发生地方阿萨德价格已经改好就价格和结核杆菌客观环境骨灰级估计几个好几个鸡冠花鸡冠花鸡冠花鸡冠花鸡冠花解决结果就赶紧赶紧高合金钢合金钢合金钢 发斯蒂芬爱上df"/>
+
+    </LinearLayout>
+
+</LinearLayout>

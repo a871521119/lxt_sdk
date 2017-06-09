@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!-- 白板 -->
+    <FrameLayout
+        android:id="@+id/activity_join_code_ppt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    ></FrameLayout>
+
+    <com.lxt.widget.VDHLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/intercept_whiteboard_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        />
+        <RelativeLayout
+            android:id="@+id/videoParent"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="60dp"
+        >
+            <!--画中画视频窗口 学生-->
+            <FrameLayout
+                android:id="@+id/picture_in_picture_a_small_window_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+            <!-- 画中画视频窗口 教师-->
+            <FrameLayout
+                android:id="@+id/picture_in_picture_a_small_window_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+            <ImageView
+                android:id="@+id/teacher_detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+            />
+
+        </RelativeLayout>
+    </com.lxt.widget.VDHLinearLayout>
+
+        <!--底部布局 文字通讯-->
+        <include layout="@layout/video_foot_layout"/>
+    <!-- 头布局 -->
+    <include layout="@layout/base_title_layout"/>
+</RelativeLayout>

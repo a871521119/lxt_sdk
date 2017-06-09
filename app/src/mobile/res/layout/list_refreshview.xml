@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lxt.mobile.activity.ClassRecordActivity"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/base_title_layout"
+        />
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/recy_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="none"
+            />
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+</RelativeLayout>

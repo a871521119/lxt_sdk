@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x120"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+    >
+
+    <RelativeLayout
+        android:id="@+id/watch_head_rl"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+
+        >
+
+        <ImageView
+            android:id="@+id/my_attention_item_titleimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/x10"
+            />
+
+        <ImageView
+            android:id="@+id/love_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_xin"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/watch_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x10"
+        android:src="@mipmap/icon_back_right"
+        />
+
+    <TextView
+        android:id="@+id/watch_count"
+        style="@style/default_textStyle_colorblack"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_toLeftOf="@id/watch_right_icon"
+        android:text="5"
+        android:textColor="@color/details_color"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/watch_count"
+        android:layout_toRightOf="@+id/watch_head_rl"
+        android:paddingLeft="@dimen/x20"
+        >
+
+        <TextView
+            android:id="@+id/my_attention_item_name"
+            style="@style/default_textStyle_colorblack"
+            android:text="Fercel"
+            />
+
+        <TextView
+            android:id="@+id/my_attention_item_age"
+            style="@style/default_textStyle_colorblack"
+            android:layout_centerVertical="true"
+            android:text="12岁"
+            android:textColor="#959595"
+            />
+
+        <TextView
+            android:id="@+id/my_attention_item_address"
+            style="@style/default_textStyle_colorgray"
+            android:layout_alignParentBottom="true"
+            android:text="澳大利亚"
+            android:textColor="#959595"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

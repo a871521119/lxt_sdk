@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lxt.mobile.activity.BootLaunchActivity"
+    >
+
+    <ImageView
+        android:id="@+id/boot_animation_father_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/boot_launch_bg"
+        />
+
+    <TextView
+        android:id="@+id/boot_launch_Proverb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x200"
+        android:gravity="center"
+        android:text="@string/defaultProverb"
+        android:textColor="@color/white_gray"
+        android:textSize="@dimen/x28"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x100"
+        android:orientation="vertical"
+        >
+
+        <!--开启button-->
+        <TextView
+            android:id="@+id/boot_launch_submit_btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_yellowbg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="开启"
+            android:textSize="@dimen/x30"
+            />
+
+        <!-- 保持专注 遇见没有-->
+        <TextView
+            android:id="@+id/boot_launch_submit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x50"
+            android:text="保持专注    遇见美好"
+            android:textColor="@color/white_gray"
+            android:textSize="@dimen/x22"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

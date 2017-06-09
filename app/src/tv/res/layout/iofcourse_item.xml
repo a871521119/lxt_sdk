@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_father_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/cover_picture"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:background="@drawable/baidi"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/iof_course_class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x22"
+            android:layout_marginLeft="@dimen/x30"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="雅思英语"
+            android:layout_marginTop="@dimen/y20"
+            />
+
+        <TextView
+            android:textSize="@dimen/x16"
+            android:id="@+id/iof_course_class_english_name"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Starbucks Beverage.Get FREE"/>
+
+        <TextView
+            android:id="@+id/effective_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x16"
+            android:gravity="center"
+            android:paddingTop="@dimen/x8"
+            android:paddingBottom="@dimen/x8"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_gravity="center|left"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
